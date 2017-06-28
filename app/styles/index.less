@@ -1,0 +1,203 @@
+@import "variables.less";
+@import "mixins.less";
+
+html{
+    background-color: initial;
+}
+
+body {
+    .baseFontSettings(@baseFontSize, @baseFontFamily, normal, @baseFontColor);
+    background-color: @bodyBackGround;
+} 
+
+.home-background {
+    background-color: #fff;
+}
+
+.background-white {
+    background-color: #ffffff !important;
+}
+
+.st-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.click-cursor {
+    cursor: pointer;
+    outline: none;
+}
+
+.label-text-box {
+    background-color: #F2F2F2;
+    margin-bottom: 3px;
+}
+
+//List Labels less
+.labels-container {
+    font-family: @baseFontFamily;
+    margin-bottom: 10px;
+}
+
+.table-header {
+    background-color: #F2F2F2;
+    font-size: @baseFontSize;
+}
+
+.labels-container table tbody tr td {
+    background-color: #FFF;
+    padding: 15px 0 17px 13px;
+}
+
+.labels-container table thead tr th {
+    background-color: #eeeeee;
+    padding: 8px 0 7px 13px;
+    font-family: @baseFontFamily;
+    font-size: @baseFontSize;
+    font-weight: bold;
+    color: #747474;
+}
+
+
+
+.label-list-data {
+    padding: 17px;
+}
+
+.label-entity-count {
+    color: #5BADEA;
+    font-size: @headerFont;
+    text-align: left;
+    font-weight: 600;
+    padding-left: 30px;
+}
+
+.label-actions {
+    color: #A0B2BC;
+    font-size: @headerFont;
+    cursor: pointer;
+    opacity: 0.8;
+    padding-left: 7px;
+    outline: none;
+}
+
+.label-card {
+    background-color: white;
+    margin-bottom: 10px;
+    font-size: 28px;
+    width: 1192px;
+    margin-top: 3px;
+    height: 60px;
+    padding-top: 9px;
+}
+
+.pagination-icons {
+    height: 40px;
+    width: 40px;    
+    border: solid 0.5px #cecece;
+    background-color: #f6f6f6;
+    padding: 8px;
+    font-size: 20px;
+    color: #a0b2bc;
+    outline: none;
+}
+
+.btn-color {
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    border: solid 0.5px #cecece;
+    height: 40px;
+}
+
+.label-table-container {
+    border: 1px solid white;
+    margin-top: 8px;
+    padding: 0;
+}
+
+.serach-label-box {
+    padding: 2px 0 2px 7px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: solid 0.5px #cecece;
+}
+
+.lable-name {
+    width: 201px;
+    height: 19px;
+    font-family: @baseFontFamily;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    color: #5badea;
+}
+
+.label-table-data {
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.label-description {
+    width: 246px;
+    height: 14px;
+    opacity: 0.7;
+    font-family: @baseFontFamily;
+    font-size: 12px;
+    text-align: left;
+    color: #242424;
+    .glyphicon {
+        top: 5px;
+        font-size: 16px;
+        margin-left: 5px;
+    }    
+}
+.edit-label-description {
+        top: 12px;        
+        margin-left: 5px;
+        padding: 2px 0 2px 7px;
+        border-radius: 5px;
+        background-color: #fff;
+        border: solid 1px #cecece;
+    }
+
+.label-checked {
+    color: #CF2F2F;
+}
+
+.label-unchecked {
+    opacity: 0.2;
+}
+
+#createlabelTitle {
+    opacity: 0.5;
+}
+
+.label-dashboard {
+    background-color: white;
+    padding: 0;
+}
+
+.label-data-conatier {
+    margin: 0px 0 0px 22px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: solid 1px #dcdcdc;
+}
+
+.pagination-summary {
+    opacity: 0.7;
+    font-family: @baseFontFamily;
+    font-size: 16px;
+    text-align: left;
+    color: #242424;
+    margin-right: 17px;
+}
+
+.pagination-left {
+    border-radius: 4px 0 0 4px;
+}
+
+.pagination-right {
+    border-radius: 0 4px 4px 0;
+}

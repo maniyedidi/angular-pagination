@@ -1,0 +1,76 @@
+/* MIXINS */
+.font-face(@fontSize: @baseFontSize; @fontWeight: normal; @color: @baseTextColor) {
+    font-size: @fontSize;
+    font-weight: @fontWeight;
+    font-style: normal;
+    line-height: @baseLineHeight;
+    color: @color;    
+}
+
+.baseFontSettings(@fontSize: @baseFontSize; @fontFamily: @baseFontFamily; @fontWeight: normal; @fontColor: @baseFontColor) {
+    font-size: @fontSize;
+    font-weight: @fontWeight;
+    font-family: @fontFamily;
+    font-style: normal;
+    color: @fontColor;    
+}
+
+.sans-serif(@fontSize: @baseFontSize; @fontWeight: normal; @color: @baseTextColor) {
+    font-family: Helvetica, Arial, sans-serif;
+    .font-face(@fontSize, @fontWeight, @color);
+}
+.arial(@fontSize: @baseFontSize; @fontWeight: normal; @color: @baseTextColor) {
+    font-family: Arial, sans-serif;
+    .font-face(@fontSize, @fontWeight, @color);   
+}
+.btn-generate(@background; @color) {
+    width: 98px;
+    padding: 2px 0;
+    border: none;
+    border-radius: 17px; 
+    background-color: @background;
+    color: @color;
+    &:hover, 
+    &:focus,
+    &:active:focus {
+        color: @color;
+        text-decoration: none;
+        outline: none;
+    }    
+}
+.border-generate(@top, @right, @bottom, @left) {
+    border-top: @top solid @borderColor;
+    border-right: @right solid @borderColor;
+    border-bottom: @bottom solid @borderColor;
+    border-left: @left solid @borderColor;
+}
+.left-rounded(@radius) {
+    border-top-left-radius: @radius;
+    border-bottom-left-radius: @radius;    
+}
+.right-rounded(@radius) {
+    border-top-right-radius: @radius;
+    border-bottom-right-radius: @radius;
+}
+.circular(@size) {
+    width: @size;
+    height: @size;
+    border-radius: 50%;    
+}
+.full-height(){
+    height: calc(~"100vh - "(@headerHeight+@footerHeight));   
+}
+
+.margin-generate(@top, @bottom, @right, @left){
+    margin-top: @top;
+    margin-right: @right;
+    margin-bottom: @bottom;
+    margin-left: @left;
+}
+
+.padding-generate(@top, @bottom, @right, @left){
+    padding-top: @top;
+    padding-right: @right;
+    padding-bottom: @bottom;
+    padding-left: @left;
+}

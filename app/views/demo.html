@@ -1,0 +1,44 @@
+<div class="labels-container">
+    <div class="row">
+        <div class=" col-sm-12 label-card">
+            <span id="managelabelstitle" translate>Pagination Demo</span>
+        </div>
+    </div>
+    <div class="label-data-conatier">
+        <div class="row">
+            <div class="col-md-11">
+                <div class="pull-right">
+                    <st-pagination pager-details="sendPagerDetails" page-selection-event="pageSelectionEvent(offset,items,fetch)" watch="watch"></st-pagination>
+                </div>
+            </div>
+        </div>
+        <div id="label-dashboard" class=" label-dashboard ">
+            <div class="table-responsive label-table-container">
+                <table class="responsive table table-condensed">
+                    <thead>
+                        <th translate> ID </th>
+                        <th translate>USERID</th>
+                        <th translate>Title</th>
+                        <th translate>BODY</th>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="item in list " ng-init="editDescription = true">
+                            <td>
+                                <span class=" label-table-data " > {{item.id}}</span>
+                            </td>
+                            <td>
+                                <span class=" label-table-data " id="ownerName">{{item.userId}}</span>
+                            </td>
+                            <td>
+                                <span class=" label-table-data " id="ownerName">{{item.title}}</span>
+                            </td>
+                            <td>
+                                <span class=" label-table-data " id="ownerName">{{item.body}}</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,4 @@
+<div class="pagination-container">
+    <span class="pagination-summary">{{tempPager.startIndex}} - {{tempPager.endIndex}} of {{pagerDetails.totalItems}} </span>
+    <span ng-class="{disabled:pagerDetails.currentPage === 1} " class="glyphicon glyphicon-chevron-left pagination-icons click-cursor pagination-left" ng-click="pagerDetails.currentPage === 1 || navigate('PREVIOUS')"></span><span class="glyphicon glyphicon-chevron-right pagination-icons click-cursor pagination-right" ng-click="pagerDetails.currentPage === pagerDetails.totalPages || navigate('NEXT')" ng-class="{disabled:pagerDetails.currentPage === pagerDetails.totalPages}" ng-disabled="true"></span>    
+</div>
