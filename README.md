@@ -4,7 +4,7 @@ this will handel pagination for rest service with client side pagination for fet
 
 ## How to Use 
 
-refer angular-pagination/app/views/demo.html for including pagincation .
+refer angular-pagination/app/views/demo.html for including pagination .
 
 
-refer angular-pagination/app/scripts/components/pagination/ for pagincation component code .
+refer angular-pagination/app/scripts/components/pagination/ for pagination component code .
